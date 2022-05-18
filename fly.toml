@@ -38,3 +38,8 @@ processes = []
     interval = "15s"
     restart_limit = 0
     timeout = "2s"
+
+[build]
+  builder = "paketobuildpacks/builder:tiny"
+  buildpacks = ["gcr.io/paketo-buildpacks/go"]
+
